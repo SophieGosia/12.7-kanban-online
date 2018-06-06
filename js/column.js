@@ -17,11 +17,11 @@ function Column(id, name) {
     var columnAddCard = $('<button class="btn add-card">Dodaj kartę</button>');
 
     // set actions to nodes
-    columnDelete.click(function () {
+    columnDelete.click(function() {
       self.deleteColumn();
     });
 
-    columnAddCard.click(function (event) {
+    columnAddCard.click(function(event) {
       var cardName = prompt('Enter the name of the card');
       event.preventDefault();
       $.ajax({
@@ -46,10 +46,10 @@ function Column(id, name) {
   }
 }
 Column.prototype = {
-  createCard: function (card) {
+  createCard: function(card) {
     this.element.children('ul').append(card.element);
   },
-  deleteColumn: function () {
+  deleteColumn: function() {
     var self = this;
     $.ajax({
       url: config.BASE_URL + '/column/' + self.id,
