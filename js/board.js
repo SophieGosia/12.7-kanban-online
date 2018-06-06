@@ -1,3 +1,6 @@
+import config from './config.js';
+import Column from './column.js';
+
 var board = {
   name: 'Kanban board',
   createColumn: function(column) {
@@ -12,7 +15,7 @@ $('.create-column').click(function() {
   var columnName = prompt('Enter a column name');
   if (columnName) {
     $.ajax({
-      url: baseUrl + '/column',
+      url: config.BASE_URL + '/column',
       method: 'POST',
       data: {
         name: columnName
@@ -40,3 +43,5 @@ function initSortableColumns() {
     placeholder: 'column-placeholder'
   }).disableSelection();
 }
+
+export default board;
