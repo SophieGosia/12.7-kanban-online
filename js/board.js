@@ -1,3 +1,5 @@
+/* global baseUrl, Column */
+
 var board = {
   name: 'Kanban board',
   createColumn: function(column) {

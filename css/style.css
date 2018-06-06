@@ -1,125 +1,36 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto|Shrikhand");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
-body {
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  text-align: center;
-  background-color: #DAD6D0;
-  background-size: cover;
-  background-image: url("https://images.unsplash.com/photo-1512950050685-b1d4ae63d2df?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=fa5f26372f4d2b24c11391c603cecc1e&auto=format&fit=crop&w=1650&q=80");
-}
+body { font-family: "Roboto", sans-serif; font-size: 20px; text-align: center; background-color: #DAD6D0; background-size: cover; background-image: url("https://images.unsplash.com/photo-1512950050685-b1d4ae63d2df?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=fa5f26372f4d2b24c11391c603cecc1e&auto=format&fit=crop&w=1650&q=80"); }
 
-.board {
-  margin-top: 20vh;
-}
+.board { margin-top: 20vh; }
 
-.board h1 {
-  color: #232524;
-  font-family: "Shrikhand", cursive;
-  font-size: 50px;
-}
+.board h1 { color: #232524; font-family: "Shrikhand", cursive; font-size: 50px; }
 
-.board .create-column {
-  width: 250px;
-  padding: 6px;
-  margin: 25px auto;
-  border-radius: 25px;
-  font-size: 20px;
-  line-height: 40px;
-}
+.board .create-column { width: 250px; padding: 6px; margin: 25px auto; border-radius: 25px; font-size: 20px; line-height: 40px; }
 
-.board .create-column:active {
-  background-color: #ff7b00;
-  box-shadow: 0 3px #91663f;
-  transform: translateY(4px);
-}
+.board .create-column:active { background-color: #ff7b00; box-shadow: 0 3px #91663f; transform: translateY(4px); }
 
-.column-container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
+.column-container { max-width: 1200px; margin: 0 auto; }
 
-.column-container .column {
-  display: inline-block;
-  vertical-align: top;
-  margin: 20px;
-  padding: 25px;
-  background-color: #f3cc71;
-}
+.column-container .column { display: inline-block; vertical-align: top; margin: 20px; padding: 25px; background-color: #f3cc71; }
 
-.column-container .column .column-title {
-  text-align: center;
-  color: #232524;
-  font-weight: 900;
-}
+.column-container .column .column-title { text-align: center; color: #232524; font-weight: 900; }
 
-.column-container .column .add-card {
-  margin-top: 10px;
-  font-weight: 500;
-  padding: 8px 20px;
-  font-size: 14px;
-  border-radius: 20px;
-}
+.column-container .column .add-card { margin-top: 10px; font-weight: 500; padding: 8px 20px; font-size: 14px; border-radius: 20px; }
 
-.column-container .column .delete {
-  float: right;
-  margin: 10px;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  font-size: 20px;
-}
+.column-container .column .delete { float: right; margin: 10px; width: 30px; height: 30px; border-radius: 50%; font-size: 20px; }
 
-.column-container .column .delete:before {
-  font-family: FontAwesome;
-  content: "\F00D";
-}
+.column-container .column .delete:before { font-family: FontAwesome; content: "\F00D"; }
 
-.btn {
-  background-color: #F5AA00;
-  color: #efffc8;
-  border: none;
-  cursor: pointer;
-  text-align: center;
-}
+.btn { background-color: #F5AA00; color: #efffc8; border: none; cursor: pointer; text-align: center; }
 
-.btn:hover {
-  background-color: #ff7b00;
-}
+.btn:hover { background-color: #ff7b00; }
 
-.column-card-list {
-  min-height: 200px;
-  margin: 20px 0 0;
-  padding: 0;
-  list-style-type: none;
-}
+.column-card-list { min-height: 200px; margin: 20px 0 0; padding: 0; list-style-type: none; }
 
-.column-card-list .card {
-  text-align: center;
-  color: #000;
-  margin-top: 20px;
-}
+.column-card-list .card { text-align: center; color: #000; margin-top: 20px; }
 
-.column-card-list .card .card-description {
-  padding: 15px;
-  background: #efffc8;
-  min-height: 56px;
-  cursor: pointer;
-  font-size: 20px;
-  color: #232524;
-}
+.column-card-list .card .card-description { padding: 15px; background: #efffc8; min-height: 56px; cursor: pointer; font-size: 20px; color: #232524; }
 
-footer {
-  font-size: 14px;
-  width: 100%;
-  margin-top: 20px;
-  padding: 20px 0;
-  background-color: none;
-  color: #F5AA00;
-}
-/*# sourceMappingURL=style.css.map */
+footer { font-size: 14px; width: 100%; margin-top: 20px; padding: 20px 0; background-color: none; color: #F5AA00; }

@@ -1,4 +1,5 @@
-// kanban card class
+/* global baseUrl */
+
 function Card(id, name) {
   var self = this;
 
@@ -28,7 +29,7 @@ Card.prototype = {
     $.ajax({
       url: baseUrl + '/card/' + self.id,
       method: 'DELETE',
-      success: function () {
+      success: function() {
         self.element.remove();
       }
     });
