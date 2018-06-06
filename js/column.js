@@ -1,4 +1,5 @@
-/* global baseUrl, Card */
+import config from './config.js';
+import Card from './card.js';
 
 function Column(id, name) {
   var self = this;
@@ -24,7 +25,7 @@ function Column(id, name) {
       var cardName = prompt('Enter the name of the card');
       event.preventDefault();
       $.ajax({
-        url: baseUrl + '/card',
+        url: config.BASE_URL + '/card',
         method: 'POST',
         data: {
           name: cardName,
@@ -51,11 +52,13 @@ Column.prototype = {
   deleteColumn: function() {
     var self = this;
     $.ajax({
-      url: baseUrl + '/column/' + self.id,
+      url: config.BASE_URL + '/column/' + self.id,
       method: 'DELETE',
-      success: function() {
+      success: function () {
         self.element.remove();
       }
     });
   }
 };
+
+export default Column;

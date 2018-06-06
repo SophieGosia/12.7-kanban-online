@@ -1,4 +1,4 @@
-/* global baseUrl */
+import config from './config.js';
 
 function Card(id, name) {
   var self = this;
@@ -27,7 +27,7 @@ Card.prototype = {
   removeCard: function() {
     var self = this;
     $.ajax({
-      url: baseUrl + '/card/' + self.id,
+      url: config.BASE_URL + '/card/' + self.id,
       method: 'DELETE',
       success: function() {
         self.element.remove();
@@ -35,3 +35,5 @@ Card.prototype = {
     });
   }
 };
+
+export default Card;
